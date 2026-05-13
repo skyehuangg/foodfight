@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android">
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/kohomedium" />
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/kohobold" />
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/kodchasan_bold" />
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/kodchasanregular" />
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/koho_regular" />
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/annieuseyourtelescope_regular" />
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/mochiypopone_regular" />
+</font-family>

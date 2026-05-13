@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/peanuts"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <!-- NO MORE ERRORS -->
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="237dp"
+        android:layout_height="229dp"
+        android:layout_marginBottom="22dp"
+        android:contentDescription="@string/sitting_tom"
+        app:layout_constraintBottom_toTopOf="@+id/Fight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/tom_sitting" />
+
+    <TextView
+        android:id="@+id/LoginText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="68dp"
+        android:fontFamily="@font/kodchasan_regular"
+        android:text="@string/already_have_an_account"
+        android:textColor="#9D3B3B"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Fight"
+        app:layout_constraintVertical_bias="0.764" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="296dp"
+        android:layout_height="52dp"
+        android:autofillHints="true"
+        android:background="@drawable/whitecorner"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:paddingStart="10sp"
+        android:paddingEnd="10sp"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        app:layout_constraintVertical_bias="0.527" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/kohobold"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/log_in"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        app:layout_constraintVertical_bias="0.311" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="76dp"
+        android:autofillHints="true"
+        android:background="@drawable/whitecorner"
+        android:elegantTextHeight="true"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:paddingStart="10sp"
+        android:paddingEnd="10sp"
+        android:textAlignment="viewStart"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Fight"
+        app:layout_constraintVertical_bias="0.088" />
+
+    <TextView
+        android:id="@+id/Fight"
+        android:layout_width="157dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="276dp"
+        android:layout_marginEnd="68dp"
+        android:fontFamily="@font/mochiypopone_regular"
+        android:text="@string/fight"
+        android:textColor="@color/black"
+        android:textSize="46sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Food"
+        android:layout_width="117dp"
+        android:layout_height="78dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/annieuseyourtelescope_regular"
+        android:gravity="end"
+        android:text="@string/food"
+        android:textColor="@color/black"
+        android:textSize="56sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Fight"
+        app:layout_constraintHorizontal_bias="0.981"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.36" />
+
+    <TextView
+        android:id="@+id/SignupText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/kodchasan_regular"
+        android:text="@string/need_an_account"
+        android:textColor="#9D3B3B"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/Signup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.986" />
+
+    <Button
+        android:id="@+id/Signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:fontFamily="@font/kohobold"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/sign_up"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

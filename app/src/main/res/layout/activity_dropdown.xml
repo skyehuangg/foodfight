@@ -1,0 +1,12 @@
+<TextView android:id="@+id/dropdownText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="14dp"
+    android:text="@string/app_name"
+    android:textSize="20sp"
+    android:gravity="center"
+    android:fontFamily="@font/kohomedium"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-2dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/peanuts"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersonalReviewActivity">
+
+<!--    NO MORE ERRORS-->
+
+    <Button
+        android:id="@+id/submitreview"
+        android:layout_width="183dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="80dp"
+        android:backgroundTint="#9D3B3B"
+        android:fontFamily="@font/kohomedium"
+        android:text="@string/submit"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bottom_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="51dp"
+        android:layout_height="57dp"
+        android:background="#ACDFAF"
+        android:contentDescription="@string/back"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toBottomOf="@+id/bottom_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.029"
+        app:srcCompat="@drawable/back_flat_color_outline_icon_free_png_removebg_preview" />
+
+    <TextView
+        android:id="@+id/otherallergen"
+        android:layout_width="259dp"
+        android:layout_height="107dp"
+        android:fontFamily="@font/kodchasan_bold"
+        android:text="@string/rate_it"
+        android:textColor="#9D3B3B"
+        android:textSize="65sp"
+        app:layout_constraintBottom_toTopOf="@+id/ratingBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.559"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.824" />
+
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="#9D3B3B"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageButton
+            android:id="@+id/myButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/whitecorner2"
+            android:src="@drawable/home2"
+            android:contentDescription="@string/home"
+            android:outlineProvider="background"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:padding="8dp"/>
+
+    </LinearLayout>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:progressTint="#5e0000"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:scrollbarSize="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.891" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/bottom_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.569">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="329dp"
+            android:layout_height="498dp"
+            android:layout_gravity="center"
+            android:background="@drawable/whitecorner"
+            android:fontFamily="@font/koho_regular"
+            android:gravity="center_horizontal|start"
+            android:hint="@string/write_own_review" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

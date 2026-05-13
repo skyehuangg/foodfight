@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- NO MORE ERRORS -->
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="240dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="15dp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/kodchasan_regular"
+        android:text="@+id/str"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.406"
+        app:layout_constraintStart_toEndOf="@id/chosenIcon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.462" />
+
+    <ImageView
+        android:id="@+id/chosenIcon"
+        android:layout_width="105dp"
+        android:layout_height="133dp"
+        android:contentDescription="@string/the_user_s_chosen_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.081"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.459"
+        app:srcCompat="@drawable/strawberry_icon" />
+
+    <TextView
+        android:id="@+id/Profile"
+        android:layout_width="330dp"
+        android:layout_height="136dp"
+        android:fontFamily="@font/kodchasan_regular"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="@string/profile"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="90sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.066" />
+
+
+    <Button
+        android:id="@+id/backToSignup"
+        android:layout_width="246dp"
+        android:layout_height="67dp"
+        android:fontFamily="@font/kohobold"
+        android:text="@string/no"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.857" />
+
+    <Button
+        android:id="@+id/goToMap"
+        android:layout_width="246dp"
+        android:layout_height="67dp"
+        android:fontFamily="@font/kohobold"
+        android:text="@string/yes"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.739" />
+
+    <TextView
+        android:id="@+id/confirm"
+        android:layout_width="330dp"
+        android:layout_height="133dp"
+        android:fontFamily="@font/kohomedium"
+        android:gravity="center"
+        android:text="@string/does_this_look_correct"
+        android:textColor="#FF9D3B3B"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.266" />
+
+    <TextView
+        android:id="@+id/makeSureYouHaveEverything"
+        android:layout_width="361dp"
+        android:layout_height="68dp"
+        android:fontFamily="@font/kohomedium"
+        android:gravity="center"
+        android:text="@string/confirmProfileText"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.614" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

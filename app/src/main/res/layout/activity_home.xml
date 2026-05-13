@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/peanuts"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ACDFAF"
+    tools:context=".HomeActivity">
+
+    <!-- NO MORE ERRORS -->
+
+    <Button
+        android:id="@+id/menu"
+        android:layout_width="178dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="116dp"
+        android:backgroundTint="#9D3B3B"
+        android:fontFamily="@font/kohomedium"
+        android:text="@string/menu"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.745" />
+
+    <Button
+        android:id="@+id/allergies"
+        android:layout_width="178dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="122dp"
+        android:backgroundTint="#9D3B3B"
+        android:fontFamily="@font/kohomedium"
+        android:text="@string/restrictions"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="280dp"
+        android:layout_height="175dp"
+        android:background="#FFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.564">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#9D3B3B"
+            android:fontFamily="@font/koho_regular"
+            android:text="@string/todays_menu"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/koho_regular"
+            android:text="@string/cheeseburger_price"
+            android:textColor="#000"
+            android:textSize="24sp"
+            android:translationX="30dp"
+            android:translationY="50dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="221dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/koho_regular"
+            android:text="@string/tenders_price"
+            android:textColor="#000"
+            android:textSize="24sp"
+            android:translationX="30dp"
+            android:translationY="117dp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/koho_regular"
+            android:text="@string/hamburger_price"
+            android:textColor="#000"
+            android:textSize="24sp"
+            android:translationX="30dp"
+            android:translationY="84dp" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="128dp"
+        android:layout_height="106dp"
+        android:fontFamily="@font/kodchasan_bold"
+        android:text="@string/hi"
+        android:textColor="@android:color/black"
+        android:textSize="70sp"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.463" />
+
+    <TextView
+        android:id="@+id/welcomeName"
+        android:layout_width="291dp"
+        android:layout_height="109dp"
+        android:fontFamily="@font/kodchasan_bold"
+        android:text="@string/placeholder_name"
+        android:textColor="@android:color/black"
+        android:textSize="70sp"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.308"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.883" />
+
+    <TextView
+        android:id="@+id/logout"
+        android:layout_width="139dp"
+        android:layout_height="56dp"
+        android:fontFamily="@font/kohomedium"
+        android:text="@string/log_out"
+        android:textColor="#9D3B3B"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.083" />
+
+    <!--   Ava Obara-->
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="182dp"
+        android:layout_height="274dp"
+        android:layout_marginStart="192dp"
+        android:contentDescription="@string/waving_tom"
+        android:rotation="-83"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/welcome"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.046"
+        app:srcCompat="@drawable/tom_waving" />
+
+    <Button
+        android:id="@+id/profile"
+        android:layout_width="178dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#9D3B3B"
+        android:fontFamily="@font/kohomedium"
+        android:text="@string/profile"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/allergies"
+        app:layout_constraintVertical_bias="0.011" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--    Skye coded functionality of code-->
+<!--    Abby contributed to research-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/peanuts"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapActivity">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="412dp"
+        android:layout_height="740dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/back2"
+        android:layout_width="51dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="8dp"
+        android:background="#ACDFAF"
+        android:contentDescription="@string/back"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.019"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.029"
+        app:srcCompat="@drawable/back_flat_color_outline_icon_free_png_removebg_preview" />
+
+    <TextView
+        android:id="@+id/schoolsearch"
+        android:layout_width="304dp"
+        android:layout_height="52dp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/kodchasan_bold"
+        android:textAlignment="center"
+        android:textColor="#9D3B3B"
+        app:layout_constraintBottom_toBottomOf="@+id/mapSearch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.766"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.225" />
+
+    <TextView
+        android:id="@+id/mapSearch"
+        android:layout_width="403dp"
+        android:layout_height="49dp"
+        android:background="@drawable/bg_search"
+        android:elevation="5dp"
+        android:fontFamily="@font/kodchasan_regular"
+        android:gravity="center"
+        android:iconifiedByDefault="false"
+        android:queryHint="Address"
+        android:textSize="18sp"
+        app:drawableEndCompat="@drawable/outline_arrow_drop_down_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.113"
+
+        />
+
+    <Button
+        android:id="@+id/submitLocationButton"
+        android:layout_width="320dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="664dp"
+        android:fontFamily="@font/kohomedium"
+        android:text="@string/next"
+        android:textColor="#FFFF"
+        android:textSize="24sp"
+        app:cornerRadius="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/map" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

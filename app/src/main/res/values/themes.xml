@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.FoodFight" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">#FFACDFAF</item>
+        <item name="colorPrimary">#FF9D3B3B</item>
+        <item name="colorPrimaryVariant">@color/black</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/white</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:textColorSecondary">@color/black</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:editTextColor">@android:color/black</item>
+    </style>
+
+    <style name="Theme.FoodFight" parent="Base.Theme.FoodFight" />
+</resources>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/allergies"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AllergiesActivity"
+    android:background="#ACDFAF">
+
+<!--   NO MORE ERRORS-->
+
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="#9D3B3B"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageButton
+            android:id="@+id/myButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/whitecorner2"
+            android:src="@drawable/home2"
+            android:contentDescription="@string/home"
+            android:outlineProvider="background"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:padding="8dp"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout4"
+        android:layout_width="315dp"
+        android:layout_height="510dp"
+        android:layout_marginTop="232dp"
+        android:background="@drawable/whitecorner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <CheckBox
+            android:id="@+id/dairy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#9D3B3B"
+            android:fontFamily="@font/kodchasan_regular"
+            android:text="@string/dairy"
+            android:textColorLink="#9D3B3B"
+            android:textSize="30sp"
+            android:translationX="20dp"
+            android:translationY="20dp" />
+
+        <CheckBox
+            android:id="@+id/peanut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#9D3B3B"
+            android:fontFamily="@font/kodchasan_regular"
+            android:text="@string/peanuts"
+            android:textSize="30sp"
+            android:translationX="20dp"
+            android:translationY="70dp"
+            app:buttonIconTint="#9D3B3B" />
+
+        <CheckBox
+            android:id="@+id/gluten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#9D3B3B"
+            android:fontFamily="@font/kodchasan_regular"
+            android:text="@string/gluten"
+            android:textSize="30sp"
+            android:translationX="20dp"
+            android:translationY="120dp"
+            app:buttonIconTint="#9D3B3B" />
+
+        <CheckBox
+            android:id="@+id/vegetarian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#9D3B3B"
+            android:fontFamily="@font/kodchasan_regular"
+            android:text="@string/vegetarian"
+            android:textSize="30sp"
+            android:translationX="20dp"
+            android:translationY="170dp"
+            app:buttonIconTint="#9D3B3B" />
+
+        <CheckBox
+            android:id="@+id/vegan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#9D3B3B"
+            android:fontFamily="@font/kodchasan_regular"
+            android:text="@string/vegan"
+            android:textSize="30sp"
+            android:translationX="20dp"
+            android:translationY="220dp"
+            app:buttonIconTint="#9D3B3B" />
+
+        <CheckBox
+            android:id="@+id/shellfish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#9D3B3B"
+            android:fontFamily="@font/kodchasan_regular"
+            android:text="@string/shellfish"
+            android:textSize="30sp"
+            android:translationX="20dp"
+            android:translationY="270dp"
+            app:buttonIconTint="#9D3B3B" />
+
+        <CheckBox
+            android:id="@+id/soy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#9D3B3B"
+            android:fontFamily="@font/kodchasan_regular"
+            android:text="@string/soy"
+            android:textSize="30sp"
+            android:translationX="20dp"
+            android:translationY="320dp"
+            app:buttonIconTint="#9D3B3B" />
+
+        <CheckBox
+            android:id="@+id/none"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#9D3B3B"
+            android:fontFamily="@font/kodchasan_regular"
+            android:text="@string/none"
+            android:textSize="30sp"
+            android:translationX="20dp"
+            android:translationY="370dp"
+            app:buttonIconTint="#9D3B3B" />
+
+        <CheckBox
+            android:id="@+id/other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#9D3B3B"
+            android:fontFamily="@font/kodchasan_regular"
+            android:text="@string/other"
+            android:textSize="30sp"
+            android:translationX="20dp"
+            android:translationY="420dp"
+            app:buttonIconTint="#9D3B3B" />
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="172dp"
+        android:layout_height="66dp"
+        android:backgroundTint="#9D3B3B"
+        android:fontFamily="@font/kohomedium"
+        android:text="@string/submit"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout4" />
+
+    <TextView
+        android:id="@+id/Allergies"
+        android:layout_width="330dp"
+        android:layout_height="136dp"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/kodchasan_regular"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="@string/list_dietary_restrictions"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="51dp"
+        android:layout_height="57dp"
+        android:background="#ACDFAF"
+        android:contentDescription="@string/back"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toBottomOf="@+id/bottom_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.029"
+        app:srcCompat="@drawable/back_flat_color_outline_icon_free_png_removebg_preview" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

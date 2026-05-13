@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- NO MORE ERRORS -->
+
+    <TextView
+        android:id="@+id/SignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/kodchasan_regular"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="@string/sign_up"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="70sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.08" />
+
+
+    <Button
+        android:id="@+id/set"
+        android:layout_width="127dp"
+        android:layout_height="64dp"
+        android:text="@string/set"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signupPassword"
+        app:layout_constraintVertical_bias="0.41" />
+
+    <EditText
+        android:id="@+id/inputFirstName"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:background="@drawable/whitecorner"
+        android:elegantTextHeight="true"
+        android:ems="10"
+        android:hint="@string/firstName"
+        android:inputType="textEmailAddress"
+        android:paddingStart="10sp"
+        android:paddingEnd="10sp"
+        android:textAlignment="viewStart"
+        android:textColor="#000000"
+        android:textColorHint="@color/black"
+        android:textSize="22sp"
+        android:autofillHints="@string/blank"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.519"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/signupPassword"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:autofillHints="@string/blank"
+        android:background="@drawable/whitecorner"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:paddingStart="10sp"
+        android:paddingEnd="10sp"
+        android:textColor="#000000"
+        android:textColorHint="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.519"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.762" />
+
+    <EditText
+        android:id="@+id/inputLastName"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:background="@drawable/whitecorner"
+        android:elegantTextHeight="true"
+        android:ems="10"
+        android:hint="@string/last_name"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/black"
+        android:paddingStart="10sp"
+        android:paddingEnd="10sp"
+        android:textAlignment="viewStart"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:autofillHints="@string/blank"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.519"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.584" />
+
+    <EditText
+        android:id="@+id/signupEmail"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:background="@drawable/whitecorner"
+        android:elegantTextHeight="true"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/black"
+        android:paddingStart="10sp"
+        android:paddingEnd="10sp"
+        android:textAlignment="viewStart"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:autofillHints="@string/blank"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.519"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.672" />
+
+    <TextView
+        android:id="@+id/profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/kohobold"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/pick_your_profile"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.264" />
+
+    <ImageButton
+        android:id="@+id/strawberry"
+        android:contentDescription="@string/strawberry_icon"
+        android:layout_width="67dp"
+        android:layout_height="73dp"
+        android:background="#ACDFAF"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.156"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.349"
+        app:srcCompat="@drawable/strawberry_icon"
+        tools:layout_editor_absoluteX="198dp"
+        tools:layout_editor_absoluteY="292dp" />
+
+    <ImageButton
+        android:id="@+id/banana"
+        android:contentDescription="@string/banana_icon"
+        android:layout_width="67dp"
+        android:layout_height="73dp"
+        android:background="#ACDFAF"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.561"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.349"
+        app:srcCompat="@drawable/banana_icon" />
+
+
+    <ImageButton
+        android:id="@+id/carrot"
+        android:layout_width="78dp"
+        android:layout_height="88dp"
+        android:background="#ACDFAF"
+        android:contentDescription="@string/carrot"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.366"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.349"
+        app:srcCompat="@drawable/carrot_icon" />
+
+    <ImageButton
+        android:id="@+id/tomato"
+        android:contentDescription="@string/tomato_icon"
+        android:layout_width="88dp"
+        android:layout_height="81dp"
+        android:background="#ACDFAF"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.804"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.352"
+        app:srcCompat="@drawable/tomato_icon" />
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="51dp"
+        android:layout_height="57dp"
+        android:background="#ACDFAF"
+        android:contentDescription="@string/back"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/back_flat_color_outline_icon_free_png_removebg_preview" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
